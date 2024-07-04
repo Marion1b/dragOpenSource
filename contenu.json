@@ -1,11 +1,9 @@
 {
-    "titre" : "OpenDrag",
-    "description" : "Ma description",
-    "profile_name" : "Draggy"
+    "profile_name" : "Draggy",
+    "profile_picture" : "https://cdn-www.konbini.com/files/2023/12/Le-Filip-1.jpg",
+    "picture_description" : "image de Le Filip",
 
-
-
-
-
-
+    "media_instagram" : "https://www.instagram.com/le_filip/?hl=fr",
+    "media_tiktok" : "https://www.tiktok.com/404?fromUrl=/le_filip",
+    "media_youtube" : "https://www.youtube.com/@lefilip2181"
 }
