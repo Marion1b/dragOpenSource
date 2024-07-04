@@ -69,12 +69,15 @@ const contentDisplay = () => {
         regularEvents.appendChild(li)
       }
 
-      const exceptionnalEvents = document.querySelector('.exceptional-list')
-      for (let key in contenu.exceptional_events) {
-        const li = document.createElement('li')
-        li.innerText = contenu.exceptional_events[key]
-        exceptionnalEvents.appendChild(li)
-      }
+        const exceptionnalEvents = document.querySelector(".exceptional-list");
+        for(let key in contenu.exceptional_events){
+            const li = document.createElement('li');
+            li.innerText = contenu.exceptional_events[key];
+            exceptionnalEvents.appendChild(li);
+        }
+
+        const TalentContainer = document.querySelector(".talent-container");
+        TalentContainer.innerHTML = contenu.talent;
     })
     .catch((error) => console.error('Error fetching JSON data:', error))
 }

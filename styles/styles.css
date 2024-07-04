@@ -99,10 +99,19 @@ section{
   Talents
   ========================================================================== */
 
-.talents iframe{
+.talent-container{
   width: 100%;
   height: 20rem;
   overflow: hidden;
+}
+
+.talent-container iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.talent-container:first-child{
+  width: 100%;
 }
 
 /* ==========================================================================
