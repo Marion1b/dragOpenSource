@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --main-bg-color:#ffbbff;
+  --shadow-light : #ffd7ff;
+  --shadow-dark : #d99fd9;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   /* Putting default font-size to 10px */
   font-size: 0.625em; /* fallback IE8+ */
   font-size: calc(
@@ -16,4 +22,97 @@ body {
 
 body {
   font-size: 1.6em; /* base font-size is equivalent "14px" */
+  font-family: "Mate", serif;
+  background-color: var(--main-bg-color);
+}
+
+h2{
+  margin-bottom: 1rem;
+}
+
+ul{
+  margin-left: 2rem;
+}
+
+a{
+  color: #000;
+}
+
+section{
+  margin: 2rem;
+  box-shadow:  20px 20px 60px #d99fd9,
+            -20px -20px 60px #ffd7ff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+/* ==========================================================================
+  Header
+  ========================================================================== */
+
+.page-header{
+  text-align: center;
+  margin: 1rem;
+}
+
+/* ==========================================================================
+  Profile section
+  ========================================================================== */
+
+.drag-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drag-profile-img-container{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.drag-profile-img{
+  width: 100%;
+}
+
+/* ==========================================================================
+  Media section
+  ========================================================================== */
+
+.medias-link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.medias-link i{
+  font-size: 4rem;
+}
+
+/* ==========================================================================
+  Family section
+  ========================================================================== */
+
+.family p{
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+  Talents
+  ========================================================================== */
+
+.talents iframe{
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+  Footer
+  ========================================================================== */
+
+.page-footer{
+  text-align: center;
+  font-size: 1rem;
 }
