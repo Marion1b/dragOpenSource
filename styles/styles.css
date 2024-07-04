@@ -6,8 +6,6 @@
 
 :root{
   --main-bg-color:#ffbbff;
-  --shadow-light : #ffd7ff;
-  --shadow-dark : #d99fd9;
 }
 
 html,
@@ -40,8 +38,7 @@ a{
 
 section{
   margin: 2rem;
-  box-shadow:  20px 20px 60px #d99fd9,
-            -20px -20px 60px #ffd7ff;
+  border: #000 .2rem solid;
   border-radius: 2rem;
   padding: 2rem;
 }
