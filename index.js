@@ -13,6 +13,10 @@ const appearanceDisplay = () => {
       links.forEach((link) => {
         link.style.color = color
       })
+      const sections = document.querySelectorAll('section')
+      sections.forEach((section) => {
+        section.style.border = `${color} .2rem solid`
+      })
     })
     .catch((error) => console.error('Error fetching JSON data:', error))
 }
