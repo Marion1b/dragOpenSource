@@ -5,5 +5,25 @@
 
     "media_instagram" : "https://www.instagram.com/le_filip/?hl=fr",
     "media_tiktok" : "https://www.tiktok.com/404?fromUrl=/le_filip",
-    "media_youtube" : "https://www.youtube.com/@lefilip2181"
+    "media_youtube" : "https://www.youtube.com/@lefilip2181",
+
+    "email_contact" : "pascal@agencemere.com",
+
+    "dragFamily_name" : "drag race",
+
+    "family_instagram" : "https://www.instagram.com/le_filip/?hl=fr",
+    "family_tiktok" : "https://www.tiktok.com/404?fromUrl=/le_filip",
+    "family_youtube" : "https://www.youtube.com/@lefilip2181",
+
+    "regular_events" : {
+        "event1":"Watching Party drag race saison 3 tous les vendredi",
+        "event2" : "Event 2",
+        "event3" : "Event 3"
+    },
+
+    "exceptional_events":{
+        "event1":"lipsync à l'attrape rêve à Rennes le 10 juillet",
+        "event2":"pride de Rennes le 20 juin",
+        "event3":"atelier drag et lipsync chez Eloïse le 18 juillet"
+    }
 }
