@@ -16,6 +16,9 @@ body {
     1em * 0.625
   ); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 body {
