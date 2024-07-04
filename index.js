@@ -70,6 +70,9 @@ const contentDisplay = () => {
             li.innerText = contenu.exceptional_events[key];
             exceptionnalEvents.appendChild(li);
         }
+
+        const TalentContainer = document.querySelector(".talent-container");
+        TalentContainer.innerHTML = contenu.talent;
     })
     .catch(error => console.error("Error fetching JSON data:", error));
 
