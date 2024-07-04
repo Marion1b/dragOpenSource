@@ -1,8 +1,17 @@
-// Fetch appearance json
-const reponse = await fetch('appearance.json')
-const appearance = await reponse.json()
-const backgroundColor = appearance['backgroundColor']
-const fontFamily = appearance['fontFamily']
+const appearanceDisplay = () => {
+  // Fetch appearance json
+  fetch('appearance.json')
+    .then((response) => response.json())
+    .then((appearance) => {
+      // Fetch body and apply selected appearance
+      const body = document.querySelector('body')
+      body.style.backgroundColor = appearance.backgroundColor
+      const color = getPoliceColor(appearance.backgroundColor)
+      body.style.color = color
+      body.style.fontFamily = appearance.fontFamily
+    })
+    .catch((error) => console.error('Error fetching JSON data:', error))
+}
 
 // Function to change font color in contrast to chosen background-color
 const getPoliceColor = (backgroundColor) => {
@@ -13,9 +22,6 @@ const getPoliceColor = (backgroundColor) => {
   return yiq >= 128 ? 'black' : 'white'
 }
 
-// Fetch body and apply selected appearance
-const body = document.querySelector('body')
-body.style.backgroundColor = backgroundColor
-const color = getPoliceColor(backgroundColor)
-body.style.color = color
-body.style.fontFamily = fontFamily
+document.addEventListener('DOMContentLoaded', () => {
+  appearanceDisplay()
+})
